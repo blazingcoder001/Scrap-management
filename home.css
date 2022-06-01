@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fruktur&family=Lobster&family=Lora&family=Patua+One&family=Sniglet&display=swap');
+
+/* The * selector selects all elements.
+
+The * selector can also select all elements inside another element*/
+
+*{
+   box-sizing: border-box;
+}
+/* the box-sizing is of two types content box and border box to know more difference visit https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+header
+section{
+    overflow-x: hidden; /* Hide horizontal scrollbar */ 
+}
+/* the content in root will be applied to whole html document its like we are giving a class to the html document */
+:root{
+   --Snigle-font:"Sniglet"; /*whenever we need to use this font we can use variable name Snigle-font */
+   --Rubik:"Rubik";
+   --Patua:"Patua One";
+   --Lobster:"Lobster";
+   /*colours to be used throughout website */
+   --light-black:#2e2c2caf;
+   --bggradient:linear-gradient(
+       to bottom,
+       #dd2476, #ff512f);
+    --light-gray:rgba(255,255,255,0.877);
+
+}
+header .nav-link{
+    font-family: var(--Snigle-font);
+    font-size: 1.1em;
+    color: whitesmoke; 
+    
+    
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-200%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 16em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.nav-link:hover{
+    color:black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+header a{
+    font-family: var(--Snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke; 
+    padding: 0.8vmin;
+}
+a:hover {
+    color:black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+header{
+    /*
+     background: #dd2467;
+     background: var(--bggradient);
+    */
+    background-image: url("scrap-background.png");
+    background-size: 1522.4px 562.04px;
+    background-repeat:no-repeat ;
+}
+header .nav-item:last-child{
+    padding-right: 8.5em;
+}
+
+header .nav-item{
+    padding: 0.9em;
+}
+
+header .row .col-md-12{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    color: white;
+    font-family: var(--Rubik);
+
+}
+
+
+header .container .col-md-12 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+header .container .col-md-12 h1{
+    font-size: 8vmin;
+   font-weight:bold;
+   padding: 0.1em 0em;
+}
+header .container .col-md-12 p{
+   padding: 1vmin 5vmin;
+}
+header .container .col-md-12 button{
+    border-radius: 30px;
+    font-weight: bold;
+ }
+ /* section 1*/
+ .section1{
+     padding-bottom:20vmin;
+
+ }
+ .section1 .row .col-6 .self img{
+     opacity: 0.8;
+     width:80%;
+     border-radius: 0.2em;
+ }
+ .section1 .row .col-6:last-child{
+     position: relative;
+ }
+ .section1 .row .col-6 .panel{
+     position:absolute;
+     top:7vmin;
+     left:-20vmin;
+     background: white;
+     border-radius: 3px;
+     text-align: left;
+     padding:13vmin 5vmin 20vmin 10vmin;
+     box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+     font-family: var(--Rubik);
+     z-index:1;
+ }
+.section1 .row .col-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+.section1 .row .col-6 .panel p{
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.5);
+}
+/*section 3 */
+.section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+  background: black;
+}
+.section-3 .col-md-12>h1{
+    padding: 2em 0 0.5em 0;
+    font-size: 6vmin;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.section-3 .col-md-12>p{
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.section-3 .desktop{
+    background: white;
+    
+    border-radius: 3em;
+    padding:2vmin 4.5vmin;
+    margin: 1em;
+
+}
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+/* section 4 */
+
+.section-4 .team{
+    padding: 10vmin 4vmin;
+}
+.section-4 .card{
+    width:22rem;
+    margin-top: 10vmin;
+
+}
+.section-4 .card .card-text{
+    /* padding: 0.5em; */
+}
+.section-4 .card .card-body>a{
+    font-size: 1.5em;
+}
+
+/* .section-4 .carousel-item{
+    padding-left: 3rem; 
+} */
+.border-radius{
+   
+    width:60%;
+}
+.section-4 .card-title{
+    font-weight: bold;
+    font-size: 4vmin;
+}
+.fa-cog{
+    background-color:white;
+}
+
+.section-4 .card{
+    float: left;
+    width: 25%;
+}
+
+.section-4 .image{
+    width: 100%;
+    padding: 18px;
+}
+
+#image-1{
+    width: 55%;
+}
+
+#image-4{
+    width: 100%;
+}
+
+.section-4 .card-button{
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    padding: 4px 8px;
+    margin-bottom: 12px;
+}
+
+.section-4 .card-button:hover{
+    background-color: rgb(71, 172, 71);
+    color: white;
+    border-radius: 7px;
+    padding: 4px 8px;
+    margin-bottom: 12px;
+}
+
+.section-4 #button-2{
+    margin-top: 5px;
+}
